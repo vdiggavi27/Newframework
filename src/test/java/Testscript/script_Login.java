@@ -50,10 +50,10 @@ public class script_Login extends Base{
 //		optimised
 		String Act_msg =pf_SI.msg_loginerr.getText();
 		if(Act_msg.equals(exp)){
-			
+			startTest.log(LogStatus.PASS, "Validate Login msg","Passed");
 			System.out.println(" Pass");
 		}else{
-			
+			startTest.log(LogStatus.FAIL, "Validate Login msg","Failed");
 			System.out.println("Fail");
 		}
 		
