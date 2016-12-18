@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Test(failed)">
+    <groups>
+      <run>
+        <include name="Smk"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="Testscript.script_Search">
+        <methods>
+          <include name="Invalid_Search"/>
+        </methods>
+      </class> <!-- Testscript.script_Search -->
+      <class name="Testscript.script_Login">
+        <methods>
+          <include name="create_Report"/>
+          <include name="valid_Login"/>
+        </methods>
+      </class> <!-- Testscript.script_Login -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
