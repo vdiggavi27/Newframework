@@ -1,4 +1,4 @@
-package Dataproviders;
+package Dataprovider;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -9,7 +9,7 @@ import java.util.Map;
 import org.testng.annotations.DataProvider;
 
 import Genericlibrary.ExcelRW;
-import Genericlibrary.Utility;
+import Genericlibrary.utility;
 
 public class dp_login {
 	
@@ -17,7 +17,7 @@ public class dp_login {
 	@DataProvider(name="invalidLogin")
 	public static Iterator<Object[]> dp_invalidLogin() throws Exception{
 
-		return Utility.dp_commonlogic("Login","InvalidLogin");
+		return utility.dp_commonlogic("Login","InvalidLogin");
 		
 	}
 	
@@ -26,7 +26,7 @@ public class dp_login {
 	@DataProvider(name="validLogin")
 	public static Iterator<Object[]> dp_validLogin() throws Exception{
 		
-		return Utility.dp_commonlogic("Login", "ValidLogin");
+		return utility.dp_commonlogic("Login", "ValidLogin");
 		
 		
 	}

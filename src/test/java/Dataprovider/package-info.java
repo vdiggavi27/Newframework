@@ -5,4 +5,4 @@
  * @author DELL
  *
  */
-package Dataproviders;
+package Dataprovider;

@@ -1,24 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="browser" value="ff"/>
   <test name="Test(failed)">
+    <parameter name="browser" value="ff"/>
     <groups>
       <run>
         <include name="Smk"/>
       </run>
     </groups>
     <classes>
-      <class name="Testscript.script_Search">
-        <methods>
-          <include name="Invalid_Search"/>
-        </methods>
-      </class> <!-- Testscript.script_Search -->
-      <class name="Testscript.script_Login">
+      <class name="Testscript.script_login">
         <methods>
           <include name="create_Report"/>
-          <include name="valid_Login"/>
+          <include name="valid_Login" invocation-numbers="0"/>
+          <include name="cloaseApp"/>
+          <include name="launchApp"/>
         </methods>
-      </class> <!-- Testscript.script_Login -->
+      </class> <!-- Testscript.script_login -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Firefox</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>7/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>6/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Mar 14 10:08:25 IST 2017</td>
+<td>Started on:</td><td>Fri May 26 06:31:05 IST 2017</td>
 </tr>
-<tr><td>Total time:</td><td>249 seconds (249575 ms)</td>
+<tr><td>Total time:</td><td>294 seconds (294184 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,102 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Testscript.script_Login.invalid_Login()'><b>invalid_Login</b><br>Test class: Testscript.script_Login<br>Parameters: {Order=1.0, Script=InvalidLogin, TC_ID=GB_01, Execute=Y, pwd=sfh, exp_msg=Sorry we were unable to complete this step because :, username=iweyr}</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//b[contains(text(),&apos;Sorry we were unable to complete this step because&apos;)]&quot;}
+Command duration or timeout: 120.05 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;Deepak-HP&apos;, ip: &apos;192.168.43.143&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=42.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: b936df57-d330-4e09-9a0b-24963483684e
+*** Element info: {Using=xpath, value=//b[contains(text(),&apos;Sorry we were unable to complete this step because&apos;)]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy10.getText(Unknown Source)
+	at Testscript.script_Login.invalid_Login(script_Login.java:55)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//b[contains(text(),&apos;Sorry we were unable to complete this step because&apos;)]&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;Deepak-HP&apos;, ip: &apos;192.168.43.143&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/Deepak/AppData/Local/Temp/anonymous4527416825785098799webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/Deepak/AppData/Local/Temp/anonymous4527416825785098799webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1738379077", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1738379077'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//b[contains(text(),&apos;Sorry we were unable to complete this step because&apos;)]&quot;}
+Command duration or timeout: 120.05 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;Deepak-HP&apos;, ip: &apos;192.168.43.143&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=42.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: b936df57-d330-4e09-9a0b-24963483684e
+*** Element info: {Using=xpath, value=//b[contains(text(),&apos;Sorry we were unable to complete this step because&apos;)]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy10.getText(Unknown Source)
+	at Testscript.script_Login.invalid_Login(script_Login.java:55)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:393)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//b[contains(text(),&apos;Sorry we were unable to complete this step because&apos;)]&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;Deepak-HP&apos;, ip: &apos;192.168.43.143&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/Deepak/AppData/Local/Temp/anonymous4527416825785098799webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/Deepak/AppData/Local/Temp/anonymous4527416825785098799webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
+</pre></div></td>
+<td>124</td>
+<td>Testscript.script_Login@6c3708b3</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -77,18 +173,13 @@ function toggleAllBoxes() {
 <tr>
 <td title='Testscript.script_Search.Invalid_Search()'><b>Invalid_Search</b><br>Test class: Testscript.script_Search<br>Parameters: {Order=1.0, searchtext=sdlk, Script=InvalidSearch, Uname=qtpworld2008@gmail.com, Expected=Sorry..'sdlk' does not match any product on Rediff Books., password=learn123, TC_ID=GB_08, Execute=Y}</td>
 <td></td>
-<td>27</td>
+<td>26</td>
 <td>Testscript.script_Search@6f1fba17</td></tr>
 <tr>
 <td title='Testscript.script_Search.ValidSearch()'><b>ValidSearch</b><br>Test class: Testscript.script_Search<br>Parameters: {Order=1.0, searchtext=Ways, Script=ValidSearch, Uname=qtpworld2008@gmail.com, Expected=498.0, password=learn123, TC_ID=GB_09, Execute=Y}</td>
 <td></td>
-<td>15</td>
+<td>12</td>
 <td>Testscript.script_Search@6f1fba17</td></tr>
-<tr>
-<td title='Testscript.script_Login.invalid_Login()'><b>invalid_Login</b><br>Test class: Testscript.script_Login<br>Parameters: {Order=1.0, Script=InvalidLogin, TC_ID=GB_01, Execute=Y, pwd=sfh, exp_msg=Sorry we were unable to complete this step because :, username=iweyr}</td>
-<td></td>
-<td>6</td>
-<td>Testscript.script_Login@6c3708b3</td></tr>
 <tr>
 <td title='Testscript.script_Login.invalid_Login()'><b>invalid_Login</b><br>Test class: Testscript.script_Login<br>Parameters: {Order=2.0, Script=InvalidLogin, TC_ID=GB_01, Execute=Y, pwd=jch, exp_msg=Sorry we were unable to complete this step because :, username=sajgh}</td>
 <td></td>
@@ -97,17 +188,17 @@ function toggleAllBoxes() {
 <tr>
 <td title='Testscript.script_Login.invalid_Login()'><b>invalid_Login</b><br>Test class: Testscript.script_Login<br>Parameters: {Order=3.0, Script=InvalidLogin, TC_ID=GB_01, Execute=Y, pwd=jzdksd, exp_msg=Sorry we were unable to complete this step because :, username=}</td>
 <td></td>
-<td>23</td>
+<td>3</td>
 <td>Testscript.script_Login@6c3708b3</td></tr>
 <tr>
 <td title='Testscript.script_Login.invalid_Login()'><b>invalid_Login</b><br>Test class: Testscript.script_Login<br>Parameters: {Order=1.0, Script=InvalidLogin, TC_ID=GB_04, Execute=Y, pwd=learn123, exp_msg=Sorry we were unable to complete this step because :, username=}</td>
 <td></td>
-<td>16</td>
+<td>3</td>
 <td>Testscript.script_Login@6c3708b3</td></tr>
 <tr>
 <td title='Testscript.script_Login.valid_Login()'><b>valid_Login</b><br>Test class: Testscript.script_Login<br>Parameters: {Order=1.0, Script=ValidLogin, TC_ID=GB_07, Execute=Y, pwd=learn123, exp_msg=qtpworld2008, username=qtpworld2008@gmail.com}</td>
 <td></td>
-<td>11</td>
+<td>9</td>
 <td>Testscript.script_Login@6c3708b3</td></tr>
 </table><p>
 </body>

@@ -36,7 +36,7 @@ public class Base {
 	@BeforeSuite(groups={"Smk","UAT","Reg"})
 	public void create_Report(){
 		
-		extentReports = new ExtentReports("E:\\DecFramework\\Report\\Ecommerce_"+get_datetimestamp() +".html",false);
+		extentReports = new ExtentReports("E:\\reportfm.html",false);
 		
 	}
 	
@@ -57,7 +57,7 @@ public class Base {
 			
 		}
 //		fd= new FirefoxDriver();
-		fd.get(Utility.getval(Utility.getval("env")));
+		fd.get(utility.getval(utility.getval("env")));
 		fd.manage().window().maximize();
 		fd.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);
 		
@@ -74,14 +74,7 @@ public class Base {
 		
 	}
 	
-	public String get_datetimestamp(){
-		Date date = new Date();
-//		format date
-		 SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MMM-yyyy hh-mm-ss");
-//		
-		 String format = dateFormat.format(date);
-		 return format;
-	}
+	
 	
 //	capture snapshot
 	public String getScreenshot() throws Exception{
@@ -89,43 +82,14 @@ public class Base {
 		TakesScreenshot sc=(TakesScreenshot)fd;
 		File screenshotAs = sc.getScreenshotAs(OutputType.FILE);
 		
-		String fpath = Utility.getval("Screenshot_path") + tcid + "_" + order + "_" + get_datetimestamp() +".png";
+		String fpath = utility.getval("Screenshot_path") + tcid + "_" + order + ".png";
 		FileUtils.copyFile(screenshotAs, new File(fpath));
 		return fpath;
 				
 	}
 	
-	
-//	Common Validation
-//	equals
-	public void cv_equals(String actual,String expected,String stepname) throws Exception{
-		
-		if(actual.equals(expected)){
-			startTest.log(LogStatus.PASS, stepname , "Passed as the Step "  + stepname + " ." + startTest.addScreenCapture(getScreenshot()));
-			
-		}else{
-			
-			startTest.log(LogStatus.FAIL, stepname , "Failed the Step " +stepname+ " as the actual value is " + actual + " and the expected is " + expected  + startTest.addScreenCapture(getScreenshot()));
-		}
-		
-				
-	}
-	
-	
-//	contains
-public void cv_contains(String actual,String expected,String stepname) throws Exception{
-		
-		if(actual.contains(expected)){
-			startTest.log(LogStatus.PASS, stepname , "Passed as the Step "  + stepname + " ." + startTest.addScreenCapture(getScreenshot()));
-			
-		}else{
-			
-			startTest.log(LogStatus.FAIL, stepname , "Failed the Step " +stepname+ " as the actual value is " + actual + " and the expected is " + expected  + startTest.addScreenCapture(getScreenshot()));
-		}
-		
-				
-	}
-	
+
+
 }
 
 

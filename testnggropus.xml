@@ -12,8 +12,7 @@
   </groups>
  
     <classes>
-      <class name="Testscript.script_Login"/>
-      <class name="Testscript.script_Search"/>
+      <class name="Testscript.script_login"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
